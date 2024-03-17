@@ -17,11 +17,21 @@ body{
     user-select: none;
     font-family: 'Poppins', sans-serif;
 }
+.tag{
+    display: flex;
+    justify-content: center;
+}
 h3{
     font-size: 2em;
     font-weight: normal;
     margin-bottom: 50px;
     color: rgb(2, 161, 167);
+    display: flex;
+}
+p{
+    font-size: 2em;
+    color: white;
+    margin-right: 20px;
 }
 div{
     width: 340px;
