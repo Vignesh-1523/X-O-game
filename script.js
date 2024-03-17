@@ -17,15 +17,14 @@ function giveValue() {
     block.forEach((cell, index) => {
         cell.addEventListener('click', () => {
             if (cell.innerHTML == "" && count % 2 == 0) {
-                cell.innerHTML = "X"
+                cell.innerHTML = "×"
                 count++
-                cell.style.backgroundColor = "#fff"
-                cell.style.color = "#000"
+                cell.style.color = "rgb(226, 223, 12)"
+                cell.style.fontSize = "4.8em"
             } else if (cell.innerHTML == "" && count % 2 != 0) {
-                cell.innerHTML = "O"
+                cell.innerHTML = "〇"
                 count++
-                cell.style.backgroundColor = "#000"
-                cell.style.color = "#fff"
+                cell.style.color = "rgb(1, 212, 167)"
             } else {
                 alert("This field is already occupied")
             }
@@ -53,8 +52,6 @@ function reset() {
     ]
     block.forEach(e => {
         e.innerHTML = ""
-        e.style.backgroundColor = "transparent"
-        e.style.color = "black"
     })
 }
 
@@ -71,7 +68,7 @@ function checkWinner(index, content) {
         let o = 0
 
         for (let i = 0; i < arr.length; i++) {
-            arr[i] == "X" ? x++ : arr[i] == "O" ? o++ : ""
+            arr[i] == "×" ? x++ : arr[i] == "〇" ? o++ : ""
         }
         if (x == 3) {
             setTimeout(() => {

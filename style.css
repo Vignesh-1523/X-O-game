@@ -1,45 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Courier+Prime:wght@400;700&family=Fjord+One&family=Hanken+Grotesk:wght@200;300;400;500;600;700&family=Kalam:wght@300;400;700&family=Lato:wght@300;400;700&family=Nova+Square&family=Orbitron:wght@400;500;600;700&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Rethink+Sans:wght@400;500&family=Short+Stack&family=Space+Grotesk:wght@300;400;500;600;700&family=Telex&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(135deg, rgba(27, 87, 128, 0.8),  rgb(142, 231, 227), rgb(2, 161, 167));
+    /* background: linear-gradient(135deg, rgba(27, 87, 128, 0.8),  rgb(142, 231, 227), rgb(2, 161, 167)); */
+    background-color: rgb(26, 26, 26);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
     user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
-h1{
+h3{
+    font-size: 2em;
+    font-weight: normal;
     margin-bottom: 50px;
+    color: rgb(2, 161, 167);
 }
 div{
-    width: 304px;
-    height: 304px;
-    border-top: 4px solid rgb(0, 0, 0);
-    border-left: 4px solid rgb(0, 0, 0);
+    width: 340px;
+    /* height: 304px; */
+    /* border-top: 4px solid rgb(0, 0, 0);
+    border-left: 4px solid rgb(0, 0, 0); */
     display: flex;
     flex-wrap: wrap;
+    /* background-color: rgb(106, 135, 160); */
 }
 span{
     width: 100px;
     height: 100px;
-    border-right: 4px solid rgb(0, 0, 0);
-    border-bottom: 4px solid rgb(0, 0, 0);
+    /* border-right: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(0, 0, 0); */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5em;
-    color: white;
+    font-weight: 200;
+    color: rgb(250, 184, 2);
+    background-color: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(10);
+    margin: 5px;
+    border-radius: 10px;
 }
 button{
     font-size: 12px;
     width: 100px;
     padding: 15px;
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(27, 224, 182);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 30px;
